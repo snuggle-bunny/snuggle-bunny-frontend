@@ -1,0 +1,20 @@
+.about {
+  &-page {
+    padding: 10px;
+  }
+  &-section {
+    width: 800px;
+    margin: 30px auto;
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      width: 80vw;
+    }
+  }
+}

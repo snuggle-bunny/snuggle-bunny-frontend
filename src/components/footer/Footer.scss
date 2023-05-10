@@ -1,3 +1,42 @@
 footer {
-    min-height: 10vh;
+  margin-top: 40px;
+  min-height: 10vh;
+  
+  .footer {
+    &-links-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &-link {
+      font-size: 16px;
+      padding: 10px 20px;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &-icons {
+      border-top: 1px solid #bebebe;
+      display: flex;
+      margin: 20px 20px 0px;
+      padding: 10px;
+      justify-content: space-between;
+      &-payments,
+      &-socials {
+        display: flex;
+        &-icon {
+          padding: 5px;
+        }
+      }
+    }
+
+    &-copyright {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
 }
