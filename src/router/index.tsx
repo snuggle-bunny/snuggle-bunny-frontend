@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import { pagesData } from "pages/pagesData";
+import { pagesData } from "router/pagesData";
 
 const Router = () => {
   const router = createBrowserRouter(pagesData);

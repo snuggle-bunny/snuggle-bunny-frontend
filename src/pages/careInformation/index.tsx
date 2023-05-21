@@ -20,7 +20,7 @@ const CareInformation = () => {
   });
   return (
     <div className="care-information">
-      <h1>Care Information</h1>
+      <h1>How To Care For Your Snuggle Bunny</h1>
       <div className="care-information-container">{allCareData}</div>
     </div>
   );

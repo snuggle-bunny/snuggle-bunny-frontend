@@ -3,9 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 50px;
+    margin: 50px 20px;
 
-    @media screen and (max-width: 1140px) {
+    @media screen and (max-width: 1220px) {
+      justify-content: left;
+    }
+
+    @media screen and (max-width: 881px) {
       justify-content: center;
     }
   }

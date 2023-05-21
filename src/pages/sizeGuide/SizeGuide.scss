@@ -1,0 +1,25 @@
+.size-guide {
+  width: 1000px;
+  margin: auto;
+  h1,
+  p {
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+
+  &-image {
+    width: 70vw;
+    margin: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    width: 90vw;
+  }
+}

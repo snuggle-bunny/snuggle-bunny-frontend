@@ -11,20 +11,18 @@ import {
 
 import { AiFillInstagram } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { footerData } from "data/footerData";
 
 const Footer = () => {
+  const footerLinks = footerData.map(({ link, title }) => (
+    <div className="footer-link" key={title}>
+      <Link to={`/${link}`}>{title}</Link>
+    </div>
+  ));
+
   return (
     <footer>
-      <div className="footer-links-container">
-        <div className="footer-link"><Link to="/our-story">Our Story</Link></div>
-        <div className="footer-link"><Link to="">Privacy Policy</Link></div>
-        <div className="footer-link"><Link to="">Refund Policy</Link></div>
-        <div className="footer-link"><Link to="">Terms of Service</Link></div>
-        <div className="footer-link"><Link to="">FAQ</Link></div>
-        <div className="footer-link"><Link to="/care-information">Care information</Link></div>
-        <div className="footer-link"><Link to="">Size Guide</Link></div>
-        <div className="footer-link"><Link to="">Contact Us</Link></div>
-      </div>
+      <div className="footer-links-container">{footerLinks}</div>
       <div className="footer-icons">
         <div className="footer-icons-payments">
           <FaCcVisa size="30px" className="footer-icons-payments-icon" />
